@@ -24,3 +24,6 @@ def obtener_mensaje(cedula):
         
         }
     )
+
+if __name__ == '__main__':
+    app.run()
