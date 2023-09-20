@@ -1,7 +1,7 @@
 import pandas as pd
 from flask import Flask, jsonify
 
-df = pd.read_csv("C:/Users/Reyner/Desktop/test/PADRON_COMPLETO.txt", encoding='latin1', header=None)
+df = pd.read_csv("PADRON_COMPLETO.txt", encoding='latin1', header=None)
 app = Flask(__name__)
 
 def quitar_espacios(palabra):
@@ -24,6 +24,3 @@ def obtener_mensaje(cedula):
         
         }
     )
-
-if __name__ == '__main__':
-    app.run()
